@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Path - Your Source for Smart Glasses News</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f8fa;
+            color: #333;
+        }
+
+        header {
+            background: #004080;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 20px auto;
+            max-width: 1200px;
+            gap: 20px;
+        }
+
+        .main-content {
+            flex: 3;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #004080;
+            border-bottom: 2px solid #004080;
+            padding-bottom: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background: #004080;
+            color: white;
+            margin-top: 20px;
+        }
+
+        /* Article and image styling */
+        article {
+            margin-bottom: 20px;
+        }
+
+        /* Centered, smaller image size with border and shadow */
+        article img {
+            width: 300px; /* Smaller width for images */
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 2px solid #ddd;
+            padding: 5px;
+            background: #fff;
+        }
+
+        .featured-articles {
+            margin-top: 20px;
+            padding: 10px;
+            background: rgb(119, 187, 255);
+            border-radius: 8px;
+        }
+
+        .about-section {
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(119, 203, 255, 0.3);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-media a {
+            margin: 0 15px;
+            display: inline-block;
+        }
+
+        .social-media img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            /* Make images full-width for smaller screens */
+            article img {
+                width: 100%;
+            }
+        }
+
+        /* Flexbox layout for text and image side by side */
+        .swot-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .swot-section img {
+            max-width: 40%; /* Adjust size as needed */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Flexbox for images in the Concept, Visions, and Goals section */
+.image-container {
+    display: flex;
+    gap: 20px; /* Adjust space between images */
+    justify-content: flex-start;
+    flex-wrap: wrap; /* Allows images to wrap if the screen is small */
+}
+
+.image-container img {
+    width: 30%; /* Adjust width as needed */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+       <h1 id="header-title"></h1>
+        <img src="images/path1.png" alt="Path Logo">
+    <h1 style="display: inline-block; margin-left: 20px;"></h1>
+        <style> 
+        header {
+            display: flexbox; /* Use flexbox for layout */
+            align-items: center; /* Center vertically */
+           justify-content: center; /* Center horizontally */
+            background:#a6ccff;
+            color: black;
+            padding: 20px 0;
+        }
+        
+        header img {
+            max-width: 300px; /* Adjust size as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+        
+        </style>
+        <nav>
+            <ul>
+                <li><a href="#Concept, Visions and goals">Concept, Visions and Goals</a></li>
+                <li><a href="#Generating Knowledge and Awareness">Generating Knowledge and Awareness</a></li>
+                <li><a href="#Generating Ideas">Generating Ideas</a></li>
+                <li><a href="#Approach to Innovation">Approach to Innovation</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+            <style>
+.design-container {
+    display: flex;
+    gap: 20px; /* Space between the images */
+    justify-content: center; /* Center content */
+}
+
+.design-container article {
+    width: 45%; /* Each article takes 45% of the container width */
+    text-align: center; /* Center-align text */
+}
+.small-image {
+    width: 300px; /* Adjust width to make the image smaller */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures image covers the area without distortion */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+    margin: 10px auto; /* Center image */
+}
+
+            
+                article {
+                    text-align: center; /* Centers the text */
+                    margin-bottom: 20px; /* Adds space between articles */
+                }
+            
+                .gallery {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between; /* Adjust spacing between items */
+                }
+            
+                .item {
+                    width: calc(50% - 10px); /* Two items per row with space */
+                }
+            </style>
+
+
+    
+    <div class="container">
+        <!-- Concept, Visions and Goals Section -->
+        <div class="main-content">
+            <div class="concept-visions-goals">
+                <h2 id="Concept, Visions and goals">Concept, Visions and Goals</h2>
+                <article>
+                    <p>Our mission is to create a world where visually impaired individuals can navigate confidently. With advanced AI and real-time navigation, our product brings independence to those in need. Our goals include continuous innovation, reaching more users, and fostering an inclusive community.</p>
+                    <div class="image-container">
+                        <img src="images/1.webp" alt="Concept Vision Image">
+                    </div>
+                </article>
+            </div>
+
+            <!-- Generating Knowledge and Awareness Section -->
+            <section id="Generating Knowledge and Awareness">
+                <h2>Generating Knowledge and Awareness</h2>
+                <article>
+                    <p>We conducted surveys to understand the challenges faced by visually impaired individuals in public spaces. Respondents highlighted the need for real-time navigation assistance and improved safety. This feedback inspired the development of our assistive technology product.</p>
+<div class="image-container">
+                        <img src="images/difficlt.jpg" alt="Concept Vision Image">
+                        <img src="images/public.jpg" alt="Vision Direction Image 2">
+                        <img src="images/new.jpg" alt="Vision Direction Image 3">
+                    </div>
+
+                </article>
+            </section>
+
+            <!-- Generating Ideas Section -->
+            <div class="about-section" id="Generating Ideas">
+                <h2>Generating Ideas</h2>
+                <div class="swot-section">
+                    <!-- Text Content for SWOT Analysis -->
+                    <div style="flex: 1; padding-right: 20px;">
+                        <p>
+                            <strong>Strengths:</strong> High-tech, Promotes independence, User-friendly<br>
+                            <strong>Weaknesses:</strong> Expensive to produce, Technological complexities<br>
+                            <strong>Opportunities:</strong> Expanding market, Partnership potential, Technological advances<br>
+                            <strong>Threats:</strong> Competition, Regulatory challenges, Economic shifts
+                        </p>
+                    </div>
+
+                    <!-- Image Section -->
+                    <div style="flex: 1;">
+                        <img src="images/Screenshot 2024-10-19 211036.png" alt="SWOT Image" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Approach to Innovation Section -->
+            <div class="about-section" id="Approach to Innovation">
+                <h2>Approach to Innovation</h2>
+                <p>
+        <strong>Product Description:</strong> VisionDirection smart glasses are designed to assist people who are visually impaired. These glasses feature a camera that scans the surroundings and provides audio instructions through headphones, allowing users to navigate safely and confidently.
+    </p>
+    <p><strong>Product Specifications:</strong></p>
+    <ul>
+        <li>Camera: Small, integrated camera for real-time environment scanning.</li>
+        <li>Audio Feedback: Comfortable headphones that deliver clear, descriptive instructions of the surroundings.</li>
+        <li>AI Technology: Advanced AI that processes the camera feed and gives accurate directions.</li>
+        <li>Voice Commands: Hands-free control through simple voice commands.</li>
+        <li>Lightweight Design: Durable, lightweight frame for all-day comfort.</li>
+        <li>Battery Life: Provides up to 12 hours of continuous use before recharging.</li>
+        <li>Bluetooth Connectivity: Connects to a smartphone for enhanced features and customization.</li>
+        <li>Durability: Built to withstand daily wear and tear.</li>
+    </ul>
+            </div>
+        </div>
+
+
+        
+<aside class="sidebar">
+            <h2>Company members</h2>
+            <ul>
+                <li><a href="#"> Designer</a></li>
+                <li><a href="#">Technical</a></li>
+                <li><a href="#">Customer Support </a></li>
+                <li><a href="#">Marketing </a></li>
+                <li><a href="#">Developer</a></li>
+            </ul>
+            
+            <div class="social-media">
+                <h2>Follow Us</h2>
+                <a href="https://facebook.com" target="_blank" title="Facebook">
+                    <img src="images/face.jpg" alt="Facebook">
+                </a>
+                <a href="https://twitter.com" target="_blank" title="X">
+                    <img src="images/x.png" alt="Twitter">
+                </a>
+                <a href="https://instagram.com" target="_blank" title="Instagram">
+                    <img src="images/insta.png" alt="Instagram">
+                </a>
+                <a href="https://linkedin.com" target="_blank" title="LinkedIn">
+                    <img src="images/in.PNG" alt="LinkedIn">
+                </a>
+            </div>
+        </aside>
+    </div>
+<div class="Design">
+    <h2>Design</h2>
+    <div class="design-container">
+        <article>
+            <h3 id="featured-title-1">Smart Glasses for the Blind</h3>
+            <img src="images/smart-glasses-2.jpg" alt="Close-up view of smart glasses design" class="small-image">
+            <p>Smart glasses designed to help the blind with augmented reality features.</p>
+        </article>
+        <article>
+            <h3 id="featured-title-2">Secondary Design for Smart Glasses</h3>
+            <img src="images/smart-glasses-1.jpg" alt="Smart glasses with augmented reality feature for the blind" class="small-image">
+            <p>Second design concept for the smart glasses, focusing on enhanced usability.</p>
+        </article>
+    </div>
+</div>
+
+
+
+   <footer>
+        <p>2024 path All rights reserved, Change location and language</p>
+        <div class="language-switcher">
+            <button onclick="setLanguage('en')">English</button>
+            <button onclick="setLanguage('ar')">العربية</button>
+        </div>
+        <div class="location-switcher">
+            <span>Select Location: </span>
+            <a href="https://www.google.com/maps/place/%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9+%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9%E2%80%AD/@24.3361317,56.5909311,7z/data=!3m1!4b1!4m6!3m5!1s0x3e5e48dfb1ab12bd:0x33d32f56c0080aa7!8m2!3d23.424076!4d53.847818!16zL20vMGoxejg?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D">United Arab Emirates</a> | 
+            <a href="https://www.google.com/maps/place/%D8%A7%D9%84%D9%88%D9%84%D8%A7%D9%8A%D8%A7%D8%AA+%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9%E2%80%AD/@35.9514004,-77.7700457,3z/data=!3m1!4b1!4m6!3m5!1s0x54eab584e432360b:0x1c3bb99243deb742!8m2!3d38.7945952!4d-106.5348379!16zL20vMDljN3cw?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D">United States</a> | 
+            <a href="https://www.google.com/maps/place/%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9+%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9%E2%80%AD/@55.378051,-3.435973,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipMY8YpaPXHcjhOkaDWuHayoTN_aqEtPnM-cX1tF!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMY8YpaPXHcjhOkaDWuHayoTN_aqEtPnM-cX1tF%3Dw152-h86-k-no!7i4608!8i2592!4m7!3m6!1s0x25a3b1142c791a9:0xc4f8a0433288257a!8m2!3d55.378051!4d-3.435973!10e5!16zL20vMDdzc2M?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D">United Kingdom</a> | 
+            <a href="https://www.google.com/maps/place/%D9%83%D9%86%D8%AF%D8%A7%E2%80%AD/@48.8321,-56.3316494,3z/data=!3m1!4b1!4m6!3m5!1s0x4b0d03d337cc6ad9:0x9968b72aa2438fa5!8m2!3d56.130366!4d-106.346771!16zL20vMGQwNjBn?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D">Canada</a> | 
+            <a href="https://www.google.com/maps/place/%D8%A3%D8%B3%D8%AA%D8%B1%D8%A7%D9%84%D9%8A%D8%A7%E2%80%AD/@-18.6532854,179.775426,3z/data=!3m1!4b1!4m6!3m5!1s0x2b2bfd076787c5df:0x538267a1955b1352!8m2!3d-25.274398!4d133.775136!16zL20vMGNoZ2h5?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D">Australia</a>
+        </div>
+       
+            
+  
+
+            
+
+    </footer>
+
+</body>
+</html>
